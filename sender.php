@@ -14,8 +14,6 @@
     Имя: $name /n
     Почта: $email /n
     Текст: $text"; 	
-	
-	if(mail($to, $subject, $msg,)){
-		$message = 'aaaaa'
-	}
+	mail($to, $subject, $msg, "From: $from ");
+	header('location: index.php?mailsend')
 ?>
