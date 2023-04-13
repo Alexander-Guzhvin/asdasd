@@ -14,7 +14,8 @@
     Имя: $name /n
     Почта: $email /n
     Текст: $text"; 	
-	mail($to, $subject, $msg, "From: $from ");
-    
-    echo "a";
+	
+	if(mail($to, $subject, $msg,)){
+		$message = 'aaaaa'
+	}
 ?>
